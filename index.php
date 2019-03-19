@@ -52,7 +52,7 @@
 			<!-- start: header -->
 			<header class="header">
 				<div class="logo-container">
-					<a href="index.php" class="logo">
+				<a href="http://localhost/" class="logo">
 						<img src="assets/images/logo.png" height="35" alt="Porto Admin" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left"

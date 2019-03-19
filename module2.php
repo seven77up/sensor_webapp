@@ -51,7 +51,7 @@
 			<!-- start: header -->
 			<header class="header">
 				<div class="logo-container">
-					<a href="index.php" class="logo">
+					<a href="http://localhost/" class="logo">
 						<img src="assets/images/logo.png" height="35" alt="Porto Admin" />
 					</a>
 					<div class="visible-xs toggle-sidebar-left"
@@ -159,25 +159,25 @@
 							<nav id="menu" class="nav-main" role="navigation">
 								<ul class="nav nav-main">
 									<li>
-										<a href="index">
+										<a href="index.php">
 											<i class="fa fa-home" aria-hidden="true"></i>
 											<span>Home</span>
 										</a>
 									</li>
 									<li>
-										<a href="module1">
+										<a href="module1.php">
 											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>Module 1</span>
 										</a>
 									</li>
 									<li class="nav-active">
-										<a href="module2">
+										<a href="module2.php">
 											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>Module 2</span>
 										</a>
 									</li>
 									<li>
-										<a href="module3">
+										<a href="module3.php">
 											<i class="fa fa-map-marker" aria-hidden="true"></i>
 											<span>Module 3</span>
 										</a>
