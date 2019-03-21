@@ -182,6 +182,19 @@
 											<span>Module 3</span>
 										</a>
 									</li>
+									<li>
+									<a href="local.php">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<span>Local DB</span>
+												</a>
+									</li>
+
+									<li>
+									<a href="azure.php">
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<span>Azure DB</span>
+												</a>
+									</li>
 								</ul>
 							</nav>
 
