@@ -1,39 +1,6 @@
-1. Clone web app from github 
-git clone https://github.com/seven77up/sensor_webapp.git
+Run docker compose
+docker-compose up -d
 
+docker-compose stop
 
-2. Run in foreground to get mysql password
-docker run --name sensor_web_app2 -p "80:80" -v ${PWD}/app:/app seven77up/sensor 
-
-
-docker run --name sensor_webapp --restart=always -p "80:80" -v ${PWD}/app:/app seven77up/sensor 
-
-
-docker run -it -p 80:80 -v ${PWD}/app:/var/www/html ownyourbits/lamp-arm
-
-
-Working code:
-
-** this line code is for docker run automatically when system reboot
-** this line code is able to show mysql password when 1st running 
-
-docker run --name sensor_web_app --restart=always -p "80:80" -v ${PWD}/app:/app seven77up/sensor
-
-
-http://localhost/phpmyadmin
-Username: admin
-Password : get from command MySQL Server with Iu7FIb2kwFOW
-
-Create database, user account 
-
-
-control + c to exit
-
-
-3. Docker won't run after pc restarts
-
-
-3. Start with container name
-docker container start sensor_web_app 
-
-
+docker-compose build

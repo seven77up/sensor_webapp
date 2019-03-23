@@ -1,0 +1,42 @@
+version: '3'
+
+services:
+  web:
+    # image: php:7.2.2-apache
+    build: 
+      context: ./
+      dockerfile: Dockerfile 
+    restart: always
+    container_name: php_web
+    depends_on:
+      - db
+    volumes:
+      - ./app/:/var/www/html/
+    ports:
+      - "80:80"
+    stdin_open: true
+    tty: true
+  phpmyadmin:
+     image: phpmyadmin/phpmyadmin
+     restart: always
+     environment:
+            PMA_ARBITRARY: 1
+            MYSQL_ROOT_PASSWORD: root
+     ports:
+            - "8877:80"
+     links:
+            # for mysql container
+            - "db:db"
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: sensor
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    ports:
+      - "3307:3307"
+volumes:
+    db:
+        driver: "local"
